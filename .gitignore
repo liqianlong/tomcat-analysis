@@ -1,0 +1,5 @@
+.idea
+*.iml
+home/logs
+home/work
+target

@@ -18,6 +18,7 @@ git clone https://github.com/ypfssm/tomcat-analysis.git
 ```
 -Dcatalina.home=<tomcat-analysis 这个项目所在的文件路径>/tomcat-analysis/home
 -Dfile.encoding=UTF-8
+
 ```
 比如说我把 tomcat-analysis 这个项目放到了 /shuaifei/IdeaProjects/ 这个文件夹下，那 -Dcatalina.home=/shuaifei/IdeaProjects/tomcat-analysis/home
 
@@ -32,3 +33,16 @@ eclipse 中如何设置 JVM 参数教程：https://blog.csdn.net/FS1360472174/ar
 mvn clean package
 ````   
 2、等待 maven 打包编译完成后，点击 `Bootstrap` 类运行它的 main 方法
+
+## 4. 问题 
+1. 控制台打印的部分日志信息乱码。
+
+解决方式：
+启动的时候设置启动参数：
+```shell
+-Duser.language=en
+```
+具体详细信息：https://blog.csdn.net/qq_38975553/article/details/102937820
+
+## 5. 参考链接
+https://cloud.tencent.com/developer/article/1666970
